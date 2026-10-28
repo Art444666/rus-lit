@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang=ru><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Пушкин</title><style>
+@property --r{syntax:'<percentage>';inherits:true;initial-value:0%}
+*{margin:0;box-sizing:border-box}html{scroll-behavior:auto;overflow:hidden}
+body{height:100vh;overflow:hidden;background:#050506;color:#d8d0c2;font:1rem/1.7 Georgia,serif}
+body::before,body::after{content:'';position:fixed;inset:0;z-index:99;pointer-events:none}
+body::before{opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::after{box-shadow:inset 0 0 22vmax #000}
+.s{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;gap:5vw;padding:0 8vw;background:radial-gradient(at 25% 20%,var(--c,#1b1610),#060607 70%);transform:translateY(100%);transition:transform .2s steps(4)}
+.o{transform:none}
+.s::before{content:attr(data-n);position:absolute;left:4vw;bottom:3vh;color:#c8a45c99;font-size:.75rem;letter-spacing:.3em}
+.s>article{flex:1;max-width:540px}
+h1{font:400 clamp(2.2rem,6vw,5rem)/1 Georgia;margin-bottom:3vh;background:linear-gradient(#f3dfae,#9c7428);-webkit-background-clip:text;background-clip:text;color:transparent}
+.t{font-size:clamp(.95rem,1.55vw,1.3rem);margin-bottom:1.1em}
+.t span{visibility:hidden}
+b{border-left:2px solid #c8a45c;margin-right:-2px;animation:bl .6s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+img{flex:none;width:min(36vw,440px);height:74vh;object-fit:cover;border:1px solid #c8a45c33;background:#fef3ae;filter:contrast(0) brightness(3);border-radius:12px;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><filter id="p"><feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="4" result="n"/><feComponentTransfer><feFuncR type="linear" slope="1.8" intercept="-0.4"/></feComponentTransfer><feDisplacementMap in="SourceGraphic" scale="15"/></filter><rect x="3" y="3" width="94" height="94" fill="black" filter="url(%23p)"/><rect x="5" y="5" width="90" height="90" fill="black"/></svg>');-webkit-mask-size:100% 100%;mask-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><filter id="p"><feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="4" result="n"/><feComponentTransfer><feFuncR type="linear" slope="1.8" intercept="-0.4"/></feComponentTransfer><feDisplacementMap in="SourceGraphic" scale="15"/></filter><rect x="3" y="3" width="94" height="94" fill="black" filter="url(%23p)"/><rect x="5" y="5" width="90" height="90" fill="black"/></svg>');mask-size:100% 100%}
+.s:nth-child(even) img{order:-1}
+.o img{filter:contrast(1.1) brightness(.85);transition:filter 1.2s .1s}
+.o.d img{transform-origin:bottom;animation:fl 12s .3s forwards;transition:none}
+@keyframes fl{0%{filter:contrast(0) brightness(3);transform:rotate(0) translateY(0)}25%{filter:contrast(1.1) brightness(.85);transform:rotate(0) translateY(0);opacity:1}to{filter:contrast(.5) brightness(.25);transform:rotate(-15deg) translateY(100px);opacity:.25}}
+.z{flex-direction:column;gap:4vh}
+.w{position:relative}
+.q{position:relative;width:min(540px,90vw);padding:4vh 7%;background:linear-gradient(#d8c398,#b9996a);color:#2b1a0c;font-style:italic;--x:50%;--y:105%;--m:radial-gradient(circle at var(--x) var(--y),transparent var(--r),#000 calc(var(--r) + .5%));-webkit-mask-image:var(--m);mask-image:var(--m)}
+.q::after{content:'';position:absolute;inset:0;opacity:0;pointer-events:none;background:radial-gradient(circle at var(--x) var(--y),transparent var(--r),#ff9a1f calc(var(--r) + 1%),#2a1005 calc(var(--r) + 4%),#5a3a1a66 calc(var(--r) + 14%),transparent calc(var(--r) + 26%))}
+.q h2{font-size:1.3rem;text-align:center;margin-bottom:1em;letter-spacing:.1em}
+.v{white-space:pre-line;font-size:clamp(.78rem,2.1vh,1.02rem);line-height:1.55}
+.b{filter:url(#x)}
+.b .q{animation:bn 6s cubic-bezier(.4,0,.9,.7) forwards}
+.b .q::after{opacity:1}
+@keyframes bn{to{--r:130%}}
+.g{position:absolute;inset:-40%;opacity:0;background:radial-gradient(at 50% 85%,#ff5a0077,transparent 60%)}
+.b .g{animation:gl 6s}
+@keyframes gl{40%{opacity:1}}
+u{position:absolute;bottom:0;width:3px;height:3px;border-radius:50%;background:#ff9a1f;box-shadow:0 0 6px #ff6a00;opacity:0;animation:em 3s linear infinite}
+@keyframes em{15%{opacity:1}to{transform:translateY(-70vh);opacity:0}}
+.f{position:absolute;inset:0;display:grid;place-content:center;text-align:center;padding:0 10vw;font-size:clamp(1.6rem,4.5vw,3.4rem);line-height:1.3;color:#e8cf94;opacity:0;transition:opacity 4s;pointer-events:none}
+.f small{display:block;margin-top:1.5em;font-size:.4em;color:#c8a45c;letter-spacing:.1em}
+.e{opacity:1}
+button{background:none;border:1px solid #c8a45c;color:#c8a45c;padding:.9em 2.2em;font:inherit;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;transition:.4s}
+button:hover{background:#c8a45c;color:#000;box-shadow:0 0 40px #c8a45c}
+button:disabled{opacity:0;pointer-events:none}
+@media(max-width:800px){.s{flex-direction:column;gap:2vh;padding:5vh 6vw}.s>article{flex:none}img{width:84vw;height:26vh}.s img{order:-1}.t{font-size:.9rem;line-height:1.5}h1{margin-bottom:1vh}}
+.g,u{pointer-events:none}button{position:relative;z-index:9}
+</style>
+<body>
+<section class=s data-n="I / V · листайте колесом"><article><h1>Пушкин без бронзы</h1><p class=t>Забудьте памятник и школьный учебник. Он был вспыльчивым, ревнивым и вечно в долгах. Дрался из-за одного слова, писал так, что цензура краснела, а власть не спала. Его ссылали, за ним следили, его лично цензурировал царь.</p><p class=t>Он не просто писал о жизни. Он прожил её так, что хватило бы на пять романов.</p></article><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpg2lwohBcvCb4Q_GqPG5qJgE9ZYU3GuNY251rSqvHTQ&s" alt="Портрет Пупсика"></section>
+<section class=s data-n="II / V" style=--c:#0f1d14><article><h1>Азарт</h1><p class=t>Банк, штос, фараон — ночи напролёт, свечи до рассвета. Он мог за вечер спустить гонорар за поэму и хохотать. На полях рукописей — столбики цифр: не рифмы, а долги.</p><p class=t>В Болдине, осенью 1833-го, он вывернул эту болезнь наизнанку: «Пиковая дама». Тройка. Семёрка. Туз. Человек, сошедший с ума ради трёх карт. Пушкин знал, как это бывает.</p></article><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSJS13xAWmeH8wgDy9Cr4zw2EQnWdwro6Cv-WeuOfctA&s=10" alt=Пупсик></section>
+<section class=s data-n="III / V" style=--c:#2a0c0c><article><h1>Ожог</h1><p class=t>Одесса, 1823. Елизавета Воронцова — жена всесильного графа, старше на семь лет и абсолютно недосягаема. Он сгорел сразу. Граф ответил по-мужски: отправил поэта считать саранчу. Потом перехватили письмо с «атеизмом» — и Пушкин улетел в ссылку, в Михайловское.</p><p class=t>Там, в 1825-м, он сжёг письмо любви и написал, как оно горит. Кому адресован стих, спорят до сих пор, но чаще называют её.</p></article><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpXPJXJ5F0ee2b1X2MrOrBO3TP9CiUK2CI99Q0GzYaEA&s=10" alt="Портрет Пупсика"></section>
+<section class="s d" data-n="IV / V" style=--c:#0b1420><article><h1>Чёрная речка</h1><p class=t>27 января 1837-го. Снег, мороз, двадцать шагов до смерти. Дантес — красивый, наглый, чужой. Анонимный «диплом рогоносца», честь жены, честь имени. Пуля вошла в живот.</p><p class=t>Пушкин упал в снег — и потребовал пистолет. Выстрелил. Попал. Двое суток он умирал, а к дому на Мойке шла вся столица.</p></article><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVsf5r2PFs802W-8nbhefbVeRHK2jffbvxhc2onLRCg&s=10" alt=Пушкин></section>
+<section class="s z" data-n="V / V" style=--c:#2a0e06><div class=w id=w><i class=g></i><div class=q><h2>Сожжённое письмо</h2><p class=v>Прощай, письмо любви! прощай: она велела.
+Как долго медлил я! как долго не хотела
+Рука предать огню все радости мои!..
+Но полно, час настал. Гори, письмо любви.
+Готов я; ничему душа моя не внемлет.
+Уж пламя жадное листы твои приемлет...
+Минуту!.. вспыхнули! пылают — легкий дым,
+Виясь, теряется с молением моим.
+Уж перстня верного утратил впечатленья,
+Растопленный сургуч кипит... О провиденье!
+Свершилось! Темные свернулися листы;
+На легком пепле их заветные черты
+Белеют... Грудь моя стеснилась. Пепел милый,
+Отрада бедная в судьбе моей унылой,
+Останься век со мной на горестной груди...</p></div></div><button id=k>Сжечь письмо</button><div class=f id=f>Бумага сгорела. Строки — нет.<small>Пуля остановила Пушкина в 37. Слова остановить не смог никто.</small></div></section>
+<svg width=0 height=0 style=position:absolute>
+  <filter id=x><feTurbulence baseFrequency=.03 numOctaves=2 /><feDisplacementMap in=SourceGraphic scale=16 /></filter>
+  <filter id="clip-mask">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G" />
+  </filter>
+</svg>
+
+<script>
+const S=[...document.querySelectorAll('.s')];let i=-1,L=0,Z,y;
+document.querySelectorAll('.t').forEach(e=>e.dataset.x=e.textContent);
+const ty=s=>{clearInterval(Z);const e=[...s.querySelectorAll('.t')];e.forEach(x=>x.innerHTML=`<span>${x.dataset.x}</span>`);let a=0,n=0;Z=setInterval(()=>{const x=e[a];if(!x)return clearInterval(Z);const t=x.dataset.x;x.innerHTML=`${t.slice(0,++n)}<b></b><span>${t.slice(n)}</span>`;if(n>=t.length){x.textContent=t;a++;n=0}},35)},
+g=n=>{if(n<0||n>4||n==i||Date.now()<L)return;L=Date.now()+700;i=n;S.forEach((s,k)=>{s.classList.toggle('o',k<=i);s.classList.toggle('a',k==i)});ty(S[i])};
+addEventListener('wheel',e=>g(i+Math.sign(e.deltaY)));
+addEventListener('keydown',e=>g(i+({ArrowDown:1,PageDown:1,' ':1,ArrowUp:-1,PageUp:-1}[e.key]||0)));
+addEventListener('touchstart',e=>y=e.touches[0].clientY);
+addEventListener('touchend',e=>{const d=y-e.changedTouches[0].clientY;Math.abs(d)>50&&g(i+Math.sign(d))});
+k.onclick=()=>{k.disabled=1;w.classList.add('b');for(let n=0;n<40;n++){const u=document.createElement('u');u.style.cssText=`left:${30+Math.random()*40}%;animation-delay:${Math.random()*4}s;animation-duration:${2+Math.random()*3}s`;w.append(u)}};
+w.onanimationend=()=>f.classList.add('e');
+g(0)
+</script>
+</body></html>
